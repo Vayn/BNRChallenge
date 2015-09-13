@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRNewAssetTypeController">
+            <connections>
+                <outlet property="assetTypeField" destination="kJ2-fQ-tPb" id="hA4-sg-mmf"/>
+                <outlet property="assetTypeLabel" destination="EXw-h3-jhh" id="rgf-tT-UuB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Asset Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXw-h3-jhh">
+                    <rect key="frame" x="43" y="101" width="124" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-fQ-tPb">
+                    <rect key="frame" x="43" y="141" width="160" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="sbO-4n-4ey"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kJ2-fQ-tPb" firstAttribute="leading" secondItem="EXw-h3-jhh" secondAttribute="trailing" constant="-124" id="Juh-QG-deA"/>
+                <constraint firstItem="EXw-h3-jhh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="43" id="N6C-pe-2y3"/>
+                <constraint firstItem="kJ2-fQ-tPb" firstAttribute="baseline" secondItem="EXw-h3-jhh" secondAttribute="baseline" constant="43" id="PkV-Du-p37"/>
+                <constraint firstItem="EXw-h3-jhh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="101" id="tb7-iQ-7qh"/>
+                <constraint firstItem="kJ2-fQ-tPb" firstAttribute="baseline" secondItem="EXw-h3-jhh" secondAttribute="baseline" constant="43" id="zJX-l9-mOb"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="510" y="293"/>
+        </view>
+    </objects>
+</document>
