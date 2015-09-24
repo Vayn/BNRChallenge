@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  Homepwner
+//  Quiz
 //
-//  Created by Vicent Tsai on 15/8/15.
-//  Copyright © 2015年 HeZhi Corp. All rights reserved.
+//  Created by Vicent Tsai on 15/8/2.
+//  Copyright (c) 2015年 Big Nerd Ranch. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ItemsTableViewController.h"
+#import "QuizViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,20 +15,15 @@
 
 @implementation AppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
 
-    // Create a ItemsViewController
-    ItemsTableViewController *itemsViewController = [[ItemsTableViewController alloc] init];
+    QuizViewController *quizVC = [[QuizViewController alloc] init];
+    self.window.rootViewController = quizVC;
 
-    // Create an instance of a UINavigationController
-    // its stack contains only itemsViewController
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
-
-    // Place ItemsViewController's table view in the window hierarchy
-    self.window.rootViewController = navController;
-
-    self.window.backgroundColor = [UIColor clearColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
